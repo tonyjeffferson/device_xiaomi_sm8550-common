@@ -58,8 +58,8 @@ BOARD_KERNEL_BASE        := 0x00000000
 BOARD_KERNEL_PAGESIZE    := 4096
 
 BOARD_KERNEL_CMDLINE := \
-    mtdoops.fingerprint=$(LINEAGE_VERSION) \
-    swinfo.fingerprint=$(LINEAGE_VERSION)
+    mtdoops.fingerprint=$(LUNARIS_VERSION) \
+    swinfo.fingerprint=$(LUNARIS_VERSION)
 
 BOARD_BOOTCONFIG := \
     androidboot.console=ttyMSM0 \
@@ -113,6 +113,7 @@ TARGET_KERNEL_EXT_MODULES := \
 	qcom/opensource/wlan/platform \
 	qcom/opensource/wlan/qcacld-3.0/.kiwi_v2 \
 	qcom/opensource/bt-kernel \
+	qcom/opensource/touch-drivers \
 	nxp/opensource/driver
 
 BOOT_KERNEL_MODULES := $(strip $(shell cat $(COMMON_PATH)/modules.load.recovery))
