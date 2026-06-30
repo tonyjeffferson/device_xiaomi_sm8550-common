@@ -173,6 +173,9 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.qcom.vendor_ramdisk
 
+# Gamebar
+$(call inherit-product, packages/apps/GameBar/gamebar.mk)
+
 # Graphics
 PRODUCT_PACKAGES += \
     gralloc.default
