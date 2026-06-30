@@ -132,7 +132,7 @@ PRODUCT_PACKAGES += \
 
 # Dolby
 PRODUCT_PACKAGES += \
-    DolbyAtmos
+    LunarisDolby
 
 # DRM
 PRODUCT_PACKAGES += \
