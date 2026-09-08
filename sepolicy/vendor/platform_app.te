@@ -1,4 +1,6 @@
 # Camera
+type vendor_panel_info_prop;
+
 allow platform_app app_data_file:file execute;
 allow platform_app vendor_audio_prop:file { open read getattr };
 binder_call(platform_app, hal_camera_default)
