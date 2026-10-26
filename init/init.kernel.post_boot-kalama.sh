@@ -131,7 +131,7 @@ if [ $rev == "1.0" ] || [ $rev == "1.1" ]; then
 else
 	echo 1267200 > /sys/devices/system/cpu/cpufreq/policy0/walt/hispeed_freq
 fi
-echo 556800 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
+echo 307200 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
 echo 1 > /sys/devices/system/cpu/cpufreq/policy0/walt/pl
 
 # configure input boost settings
@@ -151,7 +151,7 @@ if [ $rev == "1.0" ] || [ $rev == "1.1" ]; then
 else
 	echo 1555200 > /sys/devices/system/cpu/cpufreq/policy3/walt/hispeed_freq
 fi
-echo 537600 > /sys/devices/system/cpu/cpufreq/policy3/scaling_min_freq
+echo 499200 > /sys/devices/system/cpu/cpufreq/policy3/scaling_min_freq
 echo 1 > /sys/devices/system/cpu/cpufreq/policy3/walt/pl
 
 # configure governor settings for gold+ cluster
@@ -163,7 +163,7 @@ if [ $rev == "1.0" ] || [ $rev == "1.1" ]; then
 else
 	echo 1728000 > /sys/devices/system/cpu/cpufreq/policy7/walt/hispeed_freq
 fi
-echo 748800 > /sys/devices/system/cpu/cpufreq/policy7/scaling_min_freq
+echo 595200 > /sys/devices/system/cpu/cpufreq/policy7/scaling_min_freq
 echo 1 > /sys/devices/system/cpu/cpufreq/policy7/walt/pl
 
 # configure bus-dcvs
